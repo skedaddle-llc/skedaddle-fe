@@ -1,7 +1,11 @@
 class User < ApplicationRecord
 
   def self.from_omniauth(response)
-    require "pry"; binding.pry
-    User.find_or_create_by
+    User.find_or_create_by(uid: response[:uid]) do |u|
+      u.uid = response[:uid]
+      u.name = response[:info][:name]
+      u.email = response[:info][:email]
+      u.save
+    end
   end
 end
