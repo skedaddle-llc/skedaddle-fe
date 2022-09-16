@@ -24,6 +24,7 @@ RSpec.describe 'Welcome Page' do
     expect(current_path).to eql('/dashboard')
     expect(User.last.uid).to eq("123456")
     expect(User.last.email).to eq("johndoe@example.com")
+    expect(page).to have_content('Welcome, John Doe')
 
   end
 end
