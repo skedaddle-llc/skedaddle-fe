@@ -262,6 +262,92 @@
           null
         ]
       },
+      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/spec/features/welcome/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/app/controllers/welcome_controller.rb": {
         "lines": [
           1,
@@ -278,7 +364,7 @@
           null,
           1,
           1,
-          4,
+          7,
           null,
           null
         ]
@@ -288,10 +374,10 @@
           1,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
+          2,
           null,
           0,
           null,
@@ -301,28 +387,6 @@
           1,
           1,
           null,
-          null
-        ]
-      },
-      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/app/models/user.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
           null
         ]
       },
@@ -338,6 +402,6 @@
         ]
       }
     },
-    "timestamp": 1663290293
+    "timestamp": 1663290945
   }
 }

@@ -16,13 +16,13 @@ RSpec.describe 'User Dashboard Page' do
         })
   end
 
-  it 'visits the show page and logs out' do
+  it 'visits the show page and logs out, happy path', :vcr do
     visit '/'
 
     click_button('Log in with Google')
 
     expect(current_path).to eql('/dashboard')
-    
+
     expect(page).to have_content('Welcome, John Doe')
 
     click_link('Log Out')
