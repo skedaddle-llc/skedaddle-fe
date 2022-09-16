@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Welcome Page' do
+RSpec.describe 'User Dashboard Page' do
   before(:each) do
     OmniAuth.config.test_mode = true
 	  OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new(
@@ -16,21 +16,18 @@ RSpec.describe 'Welcome Page' do
         })
   end
 
-  it 'visits the welcome page, happy path', :vcr do
+  it 'visits the show page and logs out' do
     visit '/'
 
-    expect(page).to have_button('Log in with Google')
-
     click_button('Log in with Google')
-    
-    expect(User.last.uid).to eq("123456")
-    expect(User.last.email).to eq("johndoe@example.com")
 
     expect(current_path).to eql('/dashboard')
-
+    
     expect(page).to have_content('Welcome, John Doe')
-    expect(page).to have_link('Log Out')
 
+    click_link('Log Out')
+
+    expect(current_path).to eql('/')
+    expect(page).to have_no_content('Welcome, John Doe')
   end
 end
-  
