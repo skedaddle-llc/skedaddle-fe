@@ -262,6 +262,82 @@
           null
         ]
       },
+      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/spec/features/welcome/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/app/models/user.rb": {
         "lines": [
           1,
@@ -272,12 +348,11 @@
           null,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          3,
+          3,
+          3,
+          3,
+          3,
           null,
           null,
           null
@@ -289,8 +364,61 @@
           1,
           null
         ]
+      },
+      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          7,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/app/controllers/sessions_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/skedaddle-fe/skedaddle-fe/app/controllers/dashboard_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1663292708
+    "timestamp": 1663292922
   }
 }

@@ -15,8 +15,6 @@ RSpec.describe User, :type => :model do
 
   describe 'class methods' do
     it '#from_omniauth' do
-      #user_1 = User.create(uid: '123456', name: 'John Doe', email: 'johndoe@example.com')
-
       response = {
         :uid=>"123456", :info=>
         {:name=>"John Doe", 
@@ -29,5 +27,6 @@ RSpec.describe User, :type => :model do
       expect(User.last.name).to eq("John Doe")
       expect(User.last.email).to eq("johndoe@example.com")
     end
+
   end
 end
