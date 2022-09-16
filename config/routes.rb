@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root "welcome#index"
   get '/auth/:provider/callback', to: 'sessions#omniauth'
   get '/dashboard', to: 'dashboard#show'
+  delete '/sessions', to: 'sessions#destroy'
 end
