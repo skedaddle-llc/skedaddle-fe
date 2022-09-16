@@ -1,11 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Welcome Page' do
-  it 'visits the welcome page', :vcr do
-    visit '/'
-
-    expect(page).to have_button('Log in with Google')
-
+  before(:each) do
     OmniAuth.config.test_mode = true
 	  OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new(
         {"provider" => "google_oauth2",
@@ -17,7 +13,13 @@ RSpec.describe 'Welcome Page' do
         "credentials" => {
         "token" => "TOKEN",
         },
-        }) 
+        })
+  end
+
+  it 'visits the welcome page', :vcr do
+    visit '/'
+
+    expect(page).to have_button('Log in with Google')
 
     click_button('Log in with Google')
 
