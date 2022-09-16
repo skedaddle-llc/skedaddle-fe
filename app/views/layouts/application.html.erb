@@ -11,5 +11,11 @@
 
   <body>
     <%= yield %>
+     <div id="account">
+    <% if current_user %>
+      <span>Welcome, <%= current_user.name %></span>
+       <%=link_to 'Log Out', sessions_path, method: :delete%>
+    <% end %>
+  </div>
   </body>
 </html>
