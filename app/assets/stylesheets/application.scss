@@ -24,6 +24,8 @@
       height: 100%;
     }
  }
+
+
  
  $body-bg: rgb(68, 155, 61);
  $body-color: #111;
@@ -155,5 +157,18 @@ $button-bg: #fff;
       box-shadow: green;
     }
 
+.buttonTo {
+  background-color: #2908ba;
+  #background-image: image-url("google_logo.png");
+  border: none;
+  color: rgb(253, 253, 253);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 @import "bootstrap";
