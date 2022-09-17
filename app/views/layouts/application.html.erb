@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SkedaddleFe</title>
+    <title>Skedaddle</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,12 +10,16 @@
   </head>
 
   <body>
-    <%= yield %>
      <div id="account">
     <% if current_user %>
-      <span>Welcome, <%= current_user.name %></span>
-       <%=link_to 'Log Out', sessions_path, method: :delete%>
+    <footer class="bg-fade text-center text-lg-start">
+      <div class="text p-4" style="background-color: rgba(255, 0.5, 0, 0.2)">
+        <span style="float:left;"><b>Welcome, <%= current_user.name %></b></span>
+        <span style="float:right;"><%=link_to 'Log Out', sessions_path, method: :delete%></span>
+      </div>
+    </footer>
     <% end %>
   </div>
+    <%= yield %>
   </body>
 </html>
