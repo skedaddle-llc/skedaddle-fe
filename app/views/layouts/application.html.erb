@@ -10,14 +10,30 @@
   </head>
 
   <body>
-     <div id="account">
+    <div id="account">
     <% if current_user %>
-    <footer class="bg-fade text-center text-lg-start">
-      <div class="text p-4" style="background-color: rgba(255, 0.5, 0, 0.2)">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Skedaddle</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class= "nav-link", <%=link_to 'Log Out', sessions_path, method: :delete%> </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <header class="bg-fade text-center text-lg-start">
+      <div class="text p-4" style="background-color: rgba(0, 0, 0, 0)">
         <span style="float:left;"><b>Welcome, <%= current_user.name %></b></span>
-        <span style="float:right;"><%=link_to 'Log Out', sessions_path, method: :delete%></span>
       </div>
-    </footer>
+    </header>
     <% end %>
   </div>
     <%= yield %>
