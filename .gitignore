@@ -30,3 +30,5 @@
 /config/application.yml
 
 /.env
+
+/coverage
