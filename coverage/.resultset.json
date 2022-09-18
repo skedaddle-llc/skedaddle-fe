@@ -285,7 +285,6 @@
           1,
           1,
           null,
-          1,
           null,
           null
         ]
@@ -538,16 +537,17 @@
           1,
           1,
           1,
+          1,
           null,
           null,
+          1,
+          0,
+          0,
+          0,
+          0,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          0,
+          0,
           null,
           null,
           null,
@@ -571,8 +571,16 @@
           null,
           null
         ]
+      },
+      "/Users/eli/turing/3module/projects/skedaddle-fe/app/models/itinerary.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1663466000
+    "timestamp": 1663470978
   }
 }

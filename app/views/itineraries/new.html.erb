@@ -31,8 +31,8 @@
 <% end %></div>
 
 <%= form_with url: itineraries_path, method: :post, local: true do |f| %>
-  <% f.hidden_field :search, value: @search %>
-  <% f.hidden_field :parks, value: @parks %>
-  <% f.number_field :restaurants, value: @restaurants %>
+  <%= f.hidden_field :search, value: @search %>
+  <%= f.hidden_field :parks, value: @parks %>
+  <%= f.hidden_field :restaurants, value: @restaurants %>
   <p><%= f.submit 'Save' %></p>
 <% end %>
