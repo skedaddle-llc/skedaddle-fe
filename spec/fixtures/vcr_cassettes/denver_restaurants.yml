@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://skedaddle-turing-be.herokuapp.com/api/v1/restaurants?search=Denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 17 Sep 2022 21:29:11 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c93d7dcabd6e2c732224dd61c45e3914"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f0e8b9e3-ea3b-449a-a4ed-bd47dfcebb8e
+      X-Runtime:
+      - '0.691063'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Harley''s A Hot Dog Revolution","rating":5.0,"price":"$$","image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/HODxJ7lFzFvULbu3_nd1zQ/o.jpg","url":"https://www.yelp.com/biz/harleys-a-hot-dog-revolution-littleton-2?adjust_creative=yqr65LnxDeOTHIiwlRwCpA\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=yqr65LnxDeOTHIiwlRwCpA","categories":["Hot
+        Dogs","American (Traditional)"],"address":"1500 W Littleton Blvd, Ste 112,
+        Littleton, CO 80120","phone":"(720) 236-9617"},{"name":"Cafe Miriam","rating":5.0,"price":"$","image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/O-4JfXlEOt6BNoFGEi2kKw/o.jpg","url":"https://www.yelp.com/biz/cafe-miriam-denver?adjust_creative=yqr65LnxDeOTHIiwlRwCpA\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=yqr65LnxDeOTHIiwlRwCpA","categories":["Breakfast
+        \u0026 Brunch","Creperies","Moroccan"],"address":"2217 E 21st Ave, Denver,
+        CO 80205","phone":"(720) 325-9027"},{"name":"Urban Burma","rating":5.0,"price":"$","image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/A4eIX43ckLhDn0XZyRf81A/o.jpg","url":"https://www.yelp.com/biz/urban-burma-aurora?adjust_creative=yqr65LnxDeOTHIiwlRwCpA\u0026utm_campaign=yelp_api_v3\u0026utm_medium=api_v3_business_search\u0026utm_source=yqr65LnxDeOTHIiwlRwCpA","categories":["Burmese","Asian
+        Fusion"],"address":"10180 E Colfax Ave, Aurora, CO 80010","phone":"(626) 628-5430"}]'
+  recorded_at: Sat, 17 Sep 2022 21:29:12 GMT
+recorded_with: VCR 6.1.0
