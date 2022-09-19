@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'dashboard#show'
   delete '/sessions', to: 'sessions#destroy'
 
-  resources :itineraries, except: %i[index edit update]
+  resources :itineraries, except: %i[edit update]
 end
