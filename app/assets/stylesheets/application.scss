@@ -55,6 +55,21 @@
   }
 }
 
+#restaurantimage {
+  width: auto;
+  background-image: image-url("outdoor_dining.jpg");
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+
+  .stretch {
+    width: 100%;
+    height: 100%;
+  }
+}
+
  img {
       float: left;
       width: 800px;
@@ -101,21 +116,17 @@
   width: auto;
 }
 
+#itinerary {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  opacity: .87;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: auto;
+  text-align: left;
+}
+
 #search {
   background: rgb(255, 255, 255);
 }
-
-#wrapper-portfolio {
-  position: fixed; // so that it stays positioned as you want regardless of the parent
-  top: 0;
-  right: 0;
-
-  height: 100%; // you can try 100vh if this one does not work
-
-  display: flex; // the solution
-  justify-content: right;
-  align-items: center;
-}
-
 
 @import "bootstrap";
