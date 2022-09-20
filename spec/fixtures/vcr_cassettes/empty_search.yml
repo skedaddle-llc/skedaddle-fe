@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 20 Sep 2022 18:31:36 GMT
+      - Tue, 20 Sep 2022 18:50:19 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2dc253b4-0f23-4a8a-ad9e-284254236a3a
+      - 57c0a59f-edc5-4d2f-b5fe-6d1f85ab8dd0
       X-Runtime:
-      - '0.527088'
+      - '0.350015'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Tue, 20 Sep 2022 18:31:37 GMT
+  recorded_at: Tue, 20 Sep 2022 18:50:19 GMT
 - request:
     method: get
     uri: https://skedaddle-turing-be.herokuapp.com/api/v1/restaurants?search=
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 20 Sep 2022 18:31:37 GMT
+      - Tue, 20 Sep 2022 18:50:19 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,9 +73,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bb33f51c-47e6-4aa8-8834-4dcab8aca6d9
+      - 53fccef8-42a0-4b00-bdef-9b0650d147c9
       X-Runtime:
-      - '0.035229'
+      - '0.019342'
       Transfer-Encoding:
       - chunked
       Via:
@@ -83,5 +83,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Tue, 20 Sep 2022 18:31:37 GMT
+  recorded_at: Tue, 20 Sep 2022 18:50:19 GMT
 recorded_with: VCR 6.1.0

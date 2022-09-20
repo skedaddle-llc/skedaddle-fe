@@ -1,10 +1,27 @@
 require 'rails_helper'
 
 RSpec.describe 'New Itinerary' do
+  before(:each) do
+    OmniAuth.config.test_mode = true
+	  OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new(
+        {"provider" => "google_oauth2",
+        "uid" => "123456",
+        "info" => {
+        "name" => "John Doe",
+        "email" => "johndoe@example.com",
+        },
+        "credentials" => {
+        "token" => "TOKEN",
+        },
+        })
+        visit '/'
+
+        click_button('Log in with Google')
+  end
   it 'has search location and parks/restaurants displayed', vcr: 'denver_search' do
+    expect(current_path).to eq(dashboard_path)
     visit '/itineraries/new?search=denver'
     expect(page).to have_content('Denver Itinerary')
-    
     within '#parks' do
       expect(page).to have_content('Green Mountain')
       expect(page).to have_content('Red Rocks')
@@ -19,12 +36,16 @@ RSpec.describe 'New Itinerary' do
   end
 
   it "itinerary with no search SAD PATH", vcr: 'empty_search' do
+    expect(current_path).to eq(dashboard_path)
+
     visit '/itineraries/new?search='
     expect(current_path).to eq("/dashboard")
     expect(page).to have_content('Search cannot be empty!')
   end
 
   it "itinerary with no results SAD PATH", vcr: 'bad_search' do
+    expect(current_path).to eq(dashboard_path)
+
     visit '/itineraries/new?search=qweporiuqwpoeruqpweiru'
     expect(current_path).to eq("/dashboard")
     expect(page).to have_content('No results found!')

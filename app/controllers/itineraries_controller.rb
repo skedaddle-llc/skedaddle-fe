@@ -1,5 +1,8 @@
 class ItinerariesController < ApplicationController
-  before_action :search, :find_parks, :find_restaurants, only: %i[new create]
+  before_action :search, :find_parks, :find_restaurants, only: %i[new create] 
+  before_action :not_logged_in
+
+  
 
   def index
     @itineraries = current_user.itineraries
@@ -57,5 +60,13 @@ class ItinerariesController < ApplicationController
 
   def find_restaurants
     @restaurants = RestaurantsService.restaurants_near(@search)
+  end
+
+  
+  def not_logged_in 
+    if current_user == (nil)
+      redirect_to root_path
+      flash[:error] = "Must be logged in!"
+    end
   end
 end
