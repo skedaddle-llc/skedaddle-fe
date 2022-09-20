@@ -9,7 +9,7 @@
 
 <li>This application utilizes a <b>relational database</b> to store user and itinerary data.</li>
 
-<li>The application was deployed on <b>Heroku</b> but can also be viewed on a local server.</li></ul>
+<li>The application was deployed using <b>CI/CircleCI</b> on <b>Heroku</b> but can also be viewed on a local server.</li></ul>
 
 <!-- TABLE OF CONTENTS -->
 <h2 id="table-of-contents"> :book: Table of Contents</h2>
