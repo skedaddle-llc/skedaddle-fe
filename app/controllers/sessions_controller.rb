@@ -5,9 +5,7 @@ class SessionsController < ApplicationController
       if user.valid?#video added check for authorization token here instead
         session[:user_id] = user.id #video set session equal to authorization token from google (did not reference any object)
         redirect_to dashboard_url
-    else
-      redirect_to root_url
-    end
+      end
   end
 
   def destroy
