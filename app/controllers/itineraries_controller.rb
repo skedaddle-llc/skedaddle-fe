@@ -13,7 +13,9 @@ class ItinerariesController < ApplicationController
     if params[:search] == ("") || (nil)
       redirect_to "/dashboard"
       flash[:error] = "Search cannot be empty!"
-
+    elsif @parks.empty? && @restaurants.empty?
+      redirect_to "/dashboard"
+      flash[:error] = "No results found!"
     end
   end
   
