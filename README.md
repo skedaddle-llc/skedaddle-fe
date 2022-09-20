@@ -59,33 +59,34 @@
   <li><b>app/controllers/application_controller</li></b>
   <ol>
   <li>Application controller which includes helper method to account for current user</li>
-    <li>Directs rendering of several elements based on whether a user has logged in</li></ol>
+    <li>Directs rendering of several elements based on whether a user has logged in</li></ol><br>
   <li><b>app/controllers/welcome_controller.rb</li></b>
   <ol>
-  <li>Welcome page controller that initiates login via Google OAuth v2</li></ol>
+  <li>Welcome page controller that initiates login via <b>Google OAuth v2</b></li></ol><br>
   <li><b>app/controllers/sessions_controller.rb</li></b>
   <ol>
-  <li>Sessions controller that checks for OmniAuth authentication and creates a new session for user if authentication is successful </li></ol>
+  <li>Sessions controller that checks for <i>OmniAuth authentication</i> and creates a new session for user if authentication is successful </li></ol><br>
+  
   <li><b>app/controllers/dashboard_controller.rb</li></b>
   <ol>
-  <li>Dashboard controller that creates user dashboard view which provides destination search functionality</li></ol>
+  <li>Dashboard controller that creates <i>user dashboard view</i> which provides destination search functionality</li></ol><br>
+  
   <li><b>app/controllers/itineraries_controller.rb</li></b>
   <ol>
-  <li>Uses before_action to call backend API in order to receive data on trails and restaraunts based on the destination the user has searched for</li></ol>
- <li><b>app/controllers/itineraries_controller.rb</li></b>
-  <ol>
-  <li>Uses before_action to call backend API in order to receive data on trails and restaraunts based on the destination the user has searched for</li></ol>
- <li><b>app/models/user.rb</li></b>
-  <ol>
-  <li>User model that finds or creates a user after successful OAuth authentication for</li></ol>
-  <ol>
+  <li>Uses <i>before_action</i> to call backend API in order to receive data on trails and restaraunts based on the destination the user has searched for</li></ol><br>
+  
+ 
+ <li><b>app/models/user.rb</b></li>
+ <ol>
+  <li>User model that finds or creates a user after successful OAuth authentication for</li></ol><br>
+  
  <li><b>app/models/itinerary.rb</li></b>
   <ol>
-  <li>Itinerary model which references park and restaraunt objects created from API calls for</li></ol>
+  <li>Itinerary model which references park and restaraunt objects created from API calls for</li></ol><br>
   
- <li><b>app/views/</li></b>
+ <li><b>app/views/..</li></b>
   <ol>
-  <li>Dynamic pages built in HTML and CSS using Bootstrap</li></ol>
+  <li>Dynamic pages built in HTML and CSS using Bootstrap</li></ol></ul>
 
 <h3>Some other supporting files</h3>
 <ul><li><b>spec</b><ol>
