@@ -10,6 +10,8 @@ class CreateParks < ActiveRecord::Migration[5.2]
       t.string :lat
       t.string :lon
       t.string :activities
+      t.string :url
+      t.string :thumbnail
     end
   end
 end

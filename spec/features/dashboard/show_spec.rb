@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe 'User Dashboard Page' do
+  it "visits the show page but it's not logged in SAD PATH" do
+    visit'/dashboard'
+    expect(current_path).to eq(root_path)
+    expect(page).to have_content("Must be logged in!")
+  end
   before(:each) do
     OmniAuth.config.test_mode = true
 	  OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new(
