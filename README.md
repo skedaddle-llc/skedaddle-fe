@@ -40,3 +40,7 @@ To run the test suite, make sure you are in the root of the project and run bund
 | get  | '/about'  | 'about_us_contact#about_us'  |
 | get  | '/contact'  | 'about_us_contact#contact'  |
 | resources  | '/itineraries'  | except: %i[edit update]  |
+
+![image](https://user-images.githubusercontent.com/54329737/191336851-aef85c50-7805-4001-aed7-e83b62bc1b10.png)
+
+
