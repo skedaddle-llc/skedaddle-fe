@@ -1,28 +1,13 @@
-# SKEDADDLE README
-
-### FEATURES
-Users are able to log in into google OAuth and create or find a account. This application recommends parks, hiking trails, museums, restaurants! Information will help users save money and help users find many fun routes near them for a fun and adventurous weekend!
-
-### Technical Requirements
-
-
-### Configuration
-Clone down the repo and cd into it.
-Run bundle and rails db:{create,migrate,seed}
-Start a local rails server with rails s
-
-### How to run the test suite
-
-
-
-# Viewing Party Lite
+# Skedaddle
 
 <ul>
-<li><b>Viewing Party Lite</b> is a <b>Rails</b> application that allows a user to search for movies using the <a href="https://developers.themoviedb.org/3/getting-started/introduction"> The Movie Database API</a>.</li>
+<li><b>Skedaddle</b> is a <b>Rails</b> application that has both frontend and backend repositories.</li>
 
-<li>The user is provided with an option to create a viewing party after a movie is selected.</li>
+<li>The frontend consumes API endpoints exposed by the backend, which is consuming data from <b>AllTrails API</b> and <b>Yelp Fusion API</b>.</li>
+  
+  <li>This app creates a <i>custom itinerary</i> with <b>three trails</b> and <b>three restaraunts</b> based on geodata.</li>
 
-<li>This application utilizes a <b>relational database</b> to store user and viewing party data.</li>
+<li>This application utilizes a <b>relational database</b> to store user and itinerary data.</li>
 
 <li>The application was deployed on <b>Heroku</b> but can also be viewed on a local server.</li></ul>
 
