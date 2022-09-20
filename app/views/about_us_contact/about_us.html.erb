@@ -1,0 +1,106 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <div class="container"><a href="#" class="navbar-brand d-flex align-items-center"> <i class="fa fa-snowflake-o fa-lg text-primary mr-2"></i><strong>Skedaddle</strong></a>
+    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class= "nav-link", <%=link_to 'Home', dashboard_path, method: :get%> </a>
+            </li>s
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+            <a class= "nav-link", <%=link_to 'Log Out', sessions_path, method: :delete%> </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<div class="bg-light">
+    <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+        <div class="col-lg-6">
+        <h1 class="display-4">About</h1>
+        <p class="lead text-muted mb-0"> This is our submission for Turing's Back End Software Engineering and Design, Module 3's Consultancy Project</p>
+        </div>
+    <div class="col-lg-6 d-none d-lg-block"><img src="https://bootstrapious.com/i/snippets/sn-about/illus.png" alt="" class="img-fluid"></div>
+    </div>
+    </div>
+</div>
+
+
+<div class="bg-light py-5">
+    <div class="container py-5">
+    <div class="row mb-4">
+        <div class="col-lg-5">
+        <h2 class="display-4 font-weight-light">Our team</h2>
+        <p class="font-italic text-muted">Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum-security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem... if no one else can help... and if you can find them... maybe you can hire... The Skedaddle Team.</p>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <!-- Team item-->
+        <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://images.pexels.com/photos/3278364/pexels-photo-3278364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">Drew MacNicholas</h5><span class="small text-uppercase text-muted"></span>
+            <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="https://github.com/dmacnicholas">Drew's Github</a></i></a></li>
+            </ul>
+        </div>
+        </div>
+        <!-- End-->
+
+        <!-- Team item-->
+        <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://images.pexels.com/photos/6303773/pexels-photo-6303773.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">Eli Sachs</h5><span class="small text-uppercase text-muted"></span>
+            <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="https://github.com/easachs">Eli's Github</a></</i></a></li>
+            </ul>
+        </div>
+        </div>
+        <!-- End-->
+
+        <!-- Team item-->
+        <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://images.pexels.com/photos/3951350/pexels-photo-3951350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">Wesley Miranda</h5><span class="small text-uppercase text-muted"></span>
+            <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="https://github.com/wes30303">Wes's Github</a></i></a></li>
+            </ul>
+            </div>
+            </div>
+        <!-- End-->
+
+        <!-- Team item-->
+        <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://images.pexels.com/photos/5541021/pexels-photo-5541021.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">John Santosuosso </h5><span class="small text-uppercase text-muted"></span>
+            <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="https://github.com/JohnSantosuosso">John's Github</a></i></a></li>
+            </ul>
+        </div>
+        </div>
+        <!-- End-->
+
+        <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://images.pexels.com/photos/7000093/pexels-photo-7000093.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">Nick Jones </h5><span class="small text-uppercase text-muted"></span>
+            <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="https://github.com/nlj77">Nick's Github</a></i></a></li>
+            </ul>
+        </div>
+        </div>
+        <!-- End-->
+
+    </div>
+    </div>
+</div>
+
+
+<footer class="bg-light pb-5">
+    <div class="container text-center">
+    <p class="font-italic text-muted mb-0">&copy; Copyrights Company.com All rights reserved.</p>
+    </div>
+</footer>
