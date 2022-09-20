@@ -5,11 +5,17 @@ class ItinerariesController < ApplicationController
     @itineraries = current_user.itineraries
   end
 
-   def show
+  def show
     @itinerary = find_itinerary
   end
 
-  def new; end
+  def new
+    if params[:search] == ("") || (nil)
+      redirect_to "/dashboard"
+      flash[:error] = "Search cannot be empty!"
+
+    end
+  end
   
   def create
     itinerary = current_user.itineraries.new(itinerary_params)
@@ -20,7 +26,7 @@ class ItinerariesController < ApplicationController
       redirect_to itinerary_path(itinerary.id)
     else
       flash[:error] = itinerary.errors.full_messages.uniq * ', '
-      redirect_to new_itinerary_path
+      redirect_to "/dashboard"
     end
   end
 

@@ -4,6 +4,6 @@ class AboutUsContactController < ApplicationController
     end
 
     def contact
-        
+
     end
 end
