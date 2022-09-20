@@ -17,38 +17,46 @@
   <div class="row" >
     <div class="col-lg" >
 
-<h1><%= "#{params[:search]} Itinerary" %></h1>
-
-<h3>Parks</h3>
-
+<h1><b><%= "#{params[:search]} Itinerary" %></b></h1>
+<br>
+<h3><b>Parks</b></h3>
+<hr>
 <div id="parks"><% @parks.each do |park| %>
-  <p>Name: <%= park[:name] %></p>
-  <p>City: <%= park[:city] %></p>
-  <p>State: <%= park[:state] %></p>
-  <p>Country: <%= park[:country] %></p>
-  <p>Description: <%= park[:description] %></p>
-  <p>Directions: <%= park[:directions] %></p>
-  <p>Lat: <%= park[:lat] %></p>
-  <p>Lon: <%= park[:lon] %></p>
-  <p>Activities: <%= park[:activities] %></p></br>
+  <h5><b><%= park[:name] %></b></h5>
+  <p><b>City: </b><%= park[:city] %></p>
+  <p><b>State: </b><%= park[:state] %></p>
+  <p><b>Country: </b><%= park[:country] %></p>
+  <p><b>Description: </b><%= truncate(park[:description], length: 400)%></p>
+  <p><b>Directions: </b><%= park[:directions].gsub("&lt;br /&gt;", "").gsub(":&lt;br /&gt;", "") %></p>
+  <p><b>Lat: </b><%= park[:lat] %></p>
+  <p><b>Lon: </b><%= park[:lon] %></p>
+  <p><b>Activities: </b><%= park[:activities] %></p></br>
+  <hr>
 <% end %></div>
 
-<h3>Restaurants</h3>
+<h3><b>Restaurants</b></h3>
+<hr>
 <div id="restaurants"><% @restaurants.each do |restaurant| %>
-  <p>Name: <%= restaurant[:name] %></p>
-  <p>Rating: <%= restaurant[:rating] %></p>
-  <p>Price: <%= restaurant[:price] %></p>
-  <p>Image URL: <%= restaurant[:image_url] %></p>
-  <p>URL: <%= restaurant[:url] %></p>
-  <p>Categories: <%= restaurant[:categories] %></p>
-  <p>Address: <%= restaurant[:address] %></p>
-  <p>Phone: <%= restaurant[:phone] %></p></br>
+  <div>
+  <div class="right_image" id="right_image">
+  <img class="image_format" id = "image_format" src="<%= restaurant[:image_url]%>">
+  </div>
+  <h5><b><%= link_to restaurant[:name], restaurant[:url] %></b></h5></p>
+  <p><b>Rating: </b><%= restaurant[:rating] %></p>
+  <p><b>Price: </b><%= restaurant[:price] %></p>
+  <p><b>Categories: </b><%= restaurant[:categories] %></p>
+  <p><b>Address: </b><%= restaurant[:address] %></p>
+  <p><b>Phone: </b><%= restaurant[:phone] %></p></br>
+  <br>
+  </div>
+  <br>
 <% end %></div>
 
 <%= form_with url: itineraries_path, method: :post, local: true do |f| %>
   <%= f.hidden_field :search, value: @search %>
   <p><%= f.submit 'Save' %></p>
 <% end %>
+<%= button_to 'Search Again', dashboard_path, method: :get %>
 
     </div>
   </div>

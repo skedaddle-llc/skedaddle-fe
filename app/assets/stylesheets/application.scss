@@ -70,7 +70,17 @@
   }
 }
 
- img {
+#image_format {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+#right_image {
+  float: right;
+}
+
+img {
       float: left;
       width: 800px;
       height: 600px;
@@ -128,5 +138,6 @@
 #search {
   background: rgb(255, 255, 255);
 }
+
 
 @import "bootstrap";
