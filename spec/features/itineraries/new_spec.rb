@@ -17,4 +17,16 @@ RSpec.describe 'New Itinerary' do
       expect(page).to have_content('Istanbul Cafe And Bakery')
     end
   end
+
+  it "itinerary with no search SAD PATH", vcr: 'empty_search' do
+    visit '/itineraries/new?search='
+    expect(current_path).to eq("/dashboard")
+    expect(page).to have_content('Search cannot be empty!')
+  end
+
+  it "itinerary with no results SAD PATH", vcr: 'bad_search' do
+    visit '/itineraries/new?search=qweporiuqwpoeruqpweiru'
+    expect(current_path).to eq("/dashboard")
+    expect(page).to have_content('No results found!')
+  end
 end
