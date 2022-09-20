@@ -33,6 +33,8 @@ ActiveRecord::Schema.define(version: 2022_09_19_053343) do
     t.string "lat"
     t.string "lon"
     t.string "activities"
+    t.string "url"
+    t.string "thumbnail"
     t.bigint "itinerary_id"
     t.index ["itinerary_id"], name: "index_parks_on_itinerary_id"
   end

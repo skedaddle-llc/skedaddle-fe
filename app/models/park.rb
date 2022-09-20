@@ -7,6 +7,8 @@ class Park < ApplicationRecord
                         :directions,
                         :lat,
                         :lon,
-                        :activities
+                        :activities,
+                        :url,
+                        :thumbnail
   belongs_to :itinerary
 end

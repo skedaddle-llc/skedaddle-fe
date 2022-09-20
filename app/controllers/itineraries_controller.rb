@@ -29,9 +29,6 @@ class ItinerariesController < ApplicationController
       @restaurants.each { |restaurant| itinerary.restaurants.create!(restaurant) }
       flash[:success] = "New itinerary saved."
       redirect_to itinerary_path(itinerary.id)
-    else
-      flash[:error] = itinerary.errors.full_messages.uniq * ', '
-      redirect_to "/dashboard"
     end
   end
 
