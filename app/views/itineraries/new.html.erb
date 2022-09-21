@@ -22,12 +22,16 @@
 <h3><b>Parks</b></h3>
 <hr>
 <div id="parks"><% @parks.each do |park| %>
-  <h5><b><%= park[:name] %></b></h5>
+  <div>
+  <div id="right_image">
+  <img id = "image_format" src="<%= park[:thumbnail]%>">
+  </div>
+  <h5><b><%= link_to park[:name], park[:url] %></b></h5>
   <p><b>City: </b><%= park[:city] %></p>
   <p><b>State: </b><%= park[:state] %></p>
   <p><b>Country: </b><%= park[:country] %></p>
-  <p><b>Description: </b><%= truncate(park[:description], length: 400)%></p>
-  <p><b>Directions: </b><%= park[:directions].gsub("&lt;br /&gt;", "").gsub(":&lt;br /&gt;", "") %></p>
+  <p><b>Description: </b><%= truncate(park[:description], length: 500).remove('&lt;br /&gt;').remove('&lt;').remove('&gt;').remove('&amp;gt;').remove('&amp;lt;br /').remove('&#39;') %></p>
+  <p><b>Directions: </b><%= truncate(park[:directions], length: 500).remove('&lt;br /&gt;').remove('&lt;').remove('&gt;').remove('&amp;gt;').remove('&amp;lt;br /').remove('&#39;') %></p>
   <p><b>Lat: </b><%= park[:lat] %></p>
   <p><b>Lon: </b><%= park[:lon] %></p>
   <p><b>Activities: </b><%= park[:activities] %></p></br>
@@ -38,8 +42,8 @@
 <hr>
 <div id="restaurants"><% @restaurants.each do |restaurant| %>
   <div>
-  <div class="right_image" id="right_image">
-  <img class="image_format" id = "image_format" src="<%= restaurant[:image_url]%>">
+  <div id="right_image">
+  <img id = "image_format" src="<%= restaurant[:image_url]%>">
   </div>
   <h5><b><%= link_to restaurant[:name], restaurant[:url] %></b></h5></p>
   <p><b>Rating: </b><%= restaurant[:rating] %></p>

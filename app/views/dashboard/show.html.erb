@@ -25,7 +25,7 @@
       <%= form_with url: new_itinerary_path, method: :get, local: true do |f| %>
         <%= f.label :search %>
         <%= f.text_field :search %>
-        <%= f.submit 'Skedaddle' %>
+        <%= f.submit 'Skedaddle', name: nil %>
       <% end %>
       <br>
       <br>
@@ -33,7 +33,7 @@
       <p>Find your saved itineraries below.</p>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <%= link_to "Current Itineraries", '/itineraries'  %>
+          <%= link_to "Current Itineraries", itineraries_path  %>
         </li>
       </ul>
       <br>

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Park < ApplicationRecord
   validates_presence_of :name,
                         :city,

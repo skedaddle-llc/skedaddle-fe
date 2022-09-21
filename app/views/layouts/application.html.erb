@@ -18,7 +18,7 @@
 
     <% if current_user %>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Skedaddle®</a>
+        <a class="navbar-brand" href="/">Skedaddle®</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,13 +29,13 @@
               <a class= "nav-link", <%=link_to 'Home', dashboard_path, method: :get%> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" <%=link_to 'Itineraries', "/itineraries", method: :get%> </a>
+              <a class="nav-link" <%=link_to 'Itineraries', itineraries_path, method: :get%> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" <%=link_to 'About Us', "/about", method: :get%> </a>
+              <a class="nav-link" <%=link_to 'About Us', about_path, method: :get%> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" h<%=link_to 'Contact', "/contact", method: :get%></a>
+              <a class="nav-link" h<%=link_to 'Contact', contact_path, method: :get%></a>
             </li>
             <li class="nav-item">
               <a class= "nav-link", <%=link_to 'Log Out', sessions_path, method: :delete%> </a>

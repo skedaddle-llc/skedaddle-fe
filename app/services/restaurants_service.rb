@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RestaurantsService
   def self.restaurants_near(city)
     response = conn.get("restaurants?search=#{city}")

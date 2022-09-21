@@ -1,9 +1,7 @@
+# frozen_string_literal: true
+
 class AboutUsContactController < ApplicationController
-    def about_us
+  def about_us; end
 
-    end
-
-    def contact
-
-    end
+  def contact; end
 end

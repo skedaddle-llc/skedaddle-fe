@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ParksService
   def self.parks_near(city)
     response = conn.get("parks?search=#{city}")
