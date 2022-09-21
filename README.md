@@ -5,7 +5,7 @@
 
 <li>The frontend consumes API endpoints exposed by the backend, which is consuming data from <b>AllTrails API</b> and <b>Yelp Fusion API</b>.</li>
   
-  <li>This app creates a <i>custom itinerary</i> with <b>three trails</b> and <b>three restaraunts</b> based on geodata.</li>
+  <li>This app creates a <i>custom itinerary</i> with <b>three trails</b> and <b>three restaurants</b> based on geodata.</li>
 
 <li>This application utilizes a <b>relational database</b> to store user and itinerary data.</li>
 
@@ -151,15 +151,15 @@
 To run the test suite, make sure you are in the root of the project and run: <pre><code>bundle exec rspec</code></pre>
 
 <!-- SCENARIO1 -->
-<h2 id="scenario1"> :small_orange_diamond: Scenario 1: Login</h2>
-<p>Login using Google OAuth Services</p>
+<h2 id="scenario1"> :small_orange_diamond: Part 1: Login</h2>
+<p>The user logs in using Google OAuth Services</p>
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/95776577/191350939-5b522e88-631f-45be-8171-439e9f827c01.gif)
 
 
 
 <!-- SCENARIO2 -->
-<h2 id="scenario2"> :small_orange_diamond: Scenario 2: Search for a Destination </h2>
+<h2 id="scenario2"> :small_orange_diamond: Part 2: Search for a Destination </h2>
 <p>A user can search for a destination:</p>
 
 ![ezgif com-gif-maker-3](https://user-images.githubusercontent.com/95776577/191394746-fd4a3a8c-0626-40d5-881e-cfd87b6eb8c2.gif)
@@ -171,22 +171,32 @@ To run the test suite, make sure you are in the root of the project and run: <pr
 
 
 <!-- SCENARIO3 -->
-<h2 id="scenario3"> :small_orange_diamond: Scenario 3: Create a Viewing Party </h2>
-<p>A user can select a movie and create a viewing party for that movie.</p>
+<h2 id="scenario3"> :small_orange_diamond: Part 3: View Additional Trail Details </h2>
+<p>A user can visit the trail's website to view more information:</p>
+
+![ezgif com-gif-maker-5](https://user-images.githubusercontent.com/95776577/191396202-a6160152-eb11-4895-a439-cb98aecbef52.gif)
 
 
-![step 3](https://user-images.githubusercontent.com/95776577/188296382-4d1656c0-a27a-44c2-ba90-ff262ab24d21.gif)
 
 <!-- SCENARIO4 -->
-<h2 id="scenario4"> :small_orange_diamond: Scenario 4: View User Dashboard </h2>
-<p>A user can view the viewing parties they are hosting, as well as the parties they have been invited to.</p>
+<h2 id="scenario4"> :small_orange_diamond: Part 4: View Additional Restaurant Details </h2>
+<p>A user can visit the restaurant's website to view more information:.</p>
 
-![step 4](https://user-images.githubusercontent.com/95776577/188296671-a1de8a83-b5a5-4099-853c-a167471fa152.gif)
+![ezgif com-gif-maker-6](https://user-images.githubusercontent.com/95776577/191397685-a8362035-2a00-4abd-a79c-3486c6520f2b.gif)
+
+<!-- SCENARIO5 -->
+<h2 id="scenario5"> :small_orange_diamond: Part 5: Save Itinerary </h2>
+<p>A user can save an itinerary:.</p>
+
+
 
 
 <!-- CREDITS -->
 <h2 id="credits"> :scroll: Credits</h2>
 <h3>Nick Jones</h3>
+
+[![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nlj77)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nickolas-jones-523b66b7)
 
 <h3>Drew MacNicholas</h3>
 
@@ -194,6 +204,7 @@ To run the test suite, make sure you are in the root of the project and run: <pr
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/drew-macnicholas-20b75660/)
 
 <h3>Wes Miranda</h3>
+
 
 <h3>Eli Sachs</h3>
 
