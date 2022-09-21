@@ -106,7 +106,7 @@
 
 | Rails Routes  |  |  |
 | ------------- | ------------- | ------------- |
-| root  | welcome#index  | Index Page  |
+| root  | welcome#index  | goes to welcome index page  |
 | get  | '/auth/:provider/callback'  | 'sessions#omniauth'  |
 | get  | '/dashboard'  | 'dashboard#show'  |
 | delete  | '/sessions'  | 'sessions#destroy'  |
