@@ -24,7 +24,7 @@
     <li><a href="#getting-started"> ➤ Getting Started</a></li>
     <li><a href="#test-suite"> ➤ Test Suite</a></li>
     <li><a href="#scenario1"> ➤ Scenario 1: Login </a></li>
-    <li><a href="#scenario2"> ➤ Scenario 2: Discover Movies </a></li>
+    <li><a href="#scenario2"> ➤ Scenario 2: Search for a Destination </a></li>
     <li><a href="#scenario3"> ➤ Scenario 3: Create a Viewing Party  </a></li>
     <li><a href="#scenario4"> ➤ Scenario 4: View User Dashboard</a></li>
     <li><a href="#credits"> ➤ Credits</a></li>
@@ -159,10 +159,15 @@ To run the test suite, make sure you are in the root of the project and run: <pr
 
 
 <!-- SCENARIO2 -->
-<h2 id="scenario2"> :small_orange_diamond: Scenario 2: Discover Movies </h2>
-<p>A user can search for movies by title and view that movie's details.  A user can also see top rate movies by clicking the <b>Top Movies</b> button</p>
+<h2 id="scenario2"> :small_orange_diamond: Scenario 2: Search for a Destination </h2>
+<p>A user can search for a destination:</p>
 
-![step 2](https://user-images.githubusercontent.com/95776577/188296031-01b7d35f-cf38-49e0-9bd4-8cc33aa1264b.gif)
+![ezgif com-gif-maker-3](https://user-images.githubusercontent.com/95776577/191394746-fd4a3a8c-0626-40d5-881e-cfd87b6eb8c2.gif)
+
+<p>The user receives an itinerary with three nearby hiking trails and restaraunts:</p>
+
+![ezgif com-gif-maker-4](https://user-images.githubusercontent.com/95776577/191394893-2faf2e48-12bc-41b3-a29b-0ffa41aa4164.gif)
+
 
 
 <!-- SCENARIO3 -->
