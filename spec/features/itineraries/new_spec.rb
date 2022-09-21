@@ -50,7 +50,7 @@ RSpec.describe 'New Itinerary' do
     end
     click_on('Itineraries')
     expect(current_path).to eq(itineraries_path)
-    expect(page).to have_content('All Itineraries')
+    expect(page).to have_content('My Itineraries')
     expect(page).to have_content('Denver')
     click_on('Denver')
     expect(page).to have_content('Denver Itinerary')

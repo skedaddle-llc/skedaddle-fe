@@ -1,5 +1,28 @@
-<h1>All Itineraries</h1>
+<div id="islandimage"></div>
+<!-- Section: Design Block -->
+<section class="text-center text-lg-start">
+  <style>
+    .cascading-right {
+      margin-right: -50px;
+    }
 
-<% @itineraries.each do |itinerary| %>
-  <h3><%= link_to itinerary.search, itinerary_path(itinerary) %></h3>
-<% end %>
+    @media (max-width: 991.98px) {
+      .cascading-right {
+        margin-right: 0;
+      }
+    }
+  </style>
+
+<div class="container" style="margin-top:80px", id='itinerary'>
+  <div class="row" >
+    <div class="col-lg" >
+
+<br><h1><b><%= "My Itineraries" %></b></h1>
+
+<div id="parks"><% @itineraries.each do |itinerary| %>
+  <hr><h5><b><%= link_to itinerary.search, itinerary_path(itinerary) %></b>
+  <div id="right_image">created on <%= itinerary.created_at.strftime('%m/%d/%Y') %></div></h5>
+<% end %></div><br>
+    </div>
+  </div>
+</div>
