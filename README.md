@@ -233,6 +233,8 @@ To run the test suite, make sure you are in the root of the project and run: <pr
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/drew-macnicholas-20b75660/)
 
 <h3>Wes Miranda</h3>
+[![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/wes30303?tab=repositories)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wesley-miranda-80a725196/)
 
 
 <h3>Eli Sachs</h3>
