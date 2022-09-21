@@ -10,7 +10,6 @@ class Park < ApplicationRecord
                         :lat,
                         :lon,
                         :activities,
-                        :url,
-                        :thumbnail
+                        :url
   belongs_to :itinerary
 end
