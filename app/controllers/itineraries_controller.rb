@@ -1,8 +1,8 @@
-class ItinerariesController < ApplicationController
-  before_action :search, :find_parks, :find_restaurants, only: %i[new create] 
-  before_action :not_logged_in
+# frozen_string_literal: true
 
-  
+class ItinerariesController < ApplicationController
+  before_action :search, :find_parks, :find_restaurants, only: %i[new create]
+  before_action :not_logged_in
 
   def index
     @itineraries = current_user.itineraries
@@ -13,21 +13,21 @@ class ItinerariesController < ApplicationController
   end
 
   def new
-    if params[:search] == ("") || (nil)
-      redirect_to "/dashboard"
-      flash[:error] = "Search cannot be empty!"
+    if params[:search] == ('') || nil
+      redirect_to '/dashboard'
+      flash[:error] = 'Search cannot be empty!'
     elsif @parks.empty? && @restaurants.empty?
-      redirect_to "/dashboard"
-      flash[:error] = "No results found!"
+      redirect_to '/dashboard'
+      flash[:error] = 'No results found!'
     end
   end
-  
+
   def create
     itinerary = current_user.itineraries.new(itinerary_params)
     if itinerary.save
       @parks.each { |park| itinerary.parks.create!(park) }
       @restaurants.each { |restaurant| itinerary.restaurants.create!(restaurant) }
-      flash[:success] = "New itinerary saved."
+      flash[:success] = 'New itinerary saved.'
       redirect_to itinerary_path(itinerary.id)
     end
   end
@@ -48,7 +48,7 @@ class ItinerariesController < ApplicationController
   end
 
   def search
-    @search = itinerary_params[:search].capitalize
+    @search = itinerary_params[:search].capitalize.delete("'")
   end
 
   def find_parks
@@ -59,11 +59,10 @@ class ItinerariesController < ApplicationController
     @restaurants = RestaurantsService.restaurants_near(@search)
   end
 
-  
-  def not_logged_in 
+  def not_logged_in
     if current_user == (nil)
       redirect_to root_path
-      flash[:error] = "Must be logged in!"
+      flash[:error] = 'Must be logged in!'
     end
   end
 end
