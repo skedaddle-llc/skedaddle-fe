@@ -29,7 +29,9 @@
     <li><a href="#scenario1"> ➤ Scenario 1: Login </a></li>
     <li><a href="#scenario2"> ➤ Scenario 2: Search for a Destination </a></li>
     <li><a href="#scenario3"> ➤ Scenario 3: Create a Viewing Party  </a></li>
-    <li><a href="#scenario4"> ➤ Scenario 4: View User Dashboard</a></li>
+    <li><a href="#scenario4"> ➤ Scenario 4: View Additional Restaurant Details</a></li>
+    <li><a href="#scenario5"> ➤ Scenario 5: Save Itinerary or Search Again </a></li>
+    <li><a href="#scenario6"> ➤ Scenario 6: Saved Itinerary </a></li>
     <li><a href="#credits"> ➤ Credits</a></li>
   </ol>
 </details>
