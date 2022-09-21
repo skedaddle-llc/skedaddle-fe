@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe User, :type => :model do
+RSpec.describe User, type: :model do
   describe 'associations' do
-    #add associations here
+    # add associations here
   end
 
   describe 'validations' do
@@ -16,17 +18,15 @@ RSpec.describe User, :type => :model do
   describe 'class methods' do
     it '#from_omniauth' do
       response = {
-        :uid=>"123456", :info=>
-        {:name=>"John Doe", 
-          :email=>"johndoe@example.com"}
-        }
+        uid: '123456', info:         { name: 'John Doe',
+                                       email: 'johndoe@example.com' }
+      }
 
       user = User.from_omniauth(response)
 
-      expect(User.last.uid).to eq("123456")
-      expect(User.last.name).to eq("John Doe")
-      expect(User.last.email).to eq("johndoe@example.com")
+      expect(User.last.uid).to eq('123456')
+      expect(User.last.name).to eq('John Doe')
+      expect(User.last.email).to eq('johndoe@example.com')
     end
-
   end
 end
