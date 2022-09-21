@@ -17,14 +17,13 @@
 <div class="container" style="margin-top:80px", id='portfolio'>
   <div class="row">
     <div class="col-lg" >
-      <h1><b>Skedaddle</b></h1>
+      <br><h1><b>Skedaddle</b></h1>
       <p>Skedaddle is a travel app that allows users to search for destinations and create a trip itinerary.</p>
       <p>Your trip itinerary will include both hiking trails and nearby restaraunts.</p>
       <br>
       <p>To get started, enter a destination and click <b>Skedaddle</b>!</p>
       <%= form_with url: new_itinerary_path, method: :get, local: true do |f| %>
-        <%= f.label :search %>
-        <%= f.text_field :search %>
+        <%= f.text_field :search, placeholder: 'Enter a destination' %>
         <%= f.submit 'Skedaddle', name: nil %>
       <% end %>
       <br>
@@ -33,7 +32,7 @@
       <p>Find your saved itineraries below.</p>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <%= link_to "Current Itineraries", itineraries_path  %>
+          <%= link_to "My Itineraries", itineraries_path  %>
         </li>
       </ul>
       <br>
