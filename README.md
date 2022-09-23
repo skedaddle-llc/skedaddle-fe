@@ -12,7 +12,9 @@
 
 <li>This application utilizes a <b>relational database</b> to store user and itinerary data.</li>
 
-<li>The application was deployed using <b>CI/CircleCI</b> on <b>Heroku</b> but can also be viewed on a local server.</li></ul>
+<li><a href='https://developers.google.com/identity/protocols/oauth2'> Google OAuth 2.0</a> is used to authenticate and authorize users</li>
+
+<li>The application was deployed using <b>CI/CircleCI</b> on <b><a href='https://skedaddle-turing-fe.herokuapp.com'> Heroku</a></b> but can also be viewed on a local server.</li></ul>
 
 <!-- TABLE OF CONTENTS -->
 <h2 id="table-of-contents"> :book: Table of Contents</h2>
