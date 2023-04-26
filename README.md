@@ -6,7 +6,7 @@
 <ul>
 <li><b>Skedaddle</b> is a <b>Rails</b> application that has both frontend and backend repositories.</li>
 
-<li>The frontend consumes API endpoints exposed by the backend, which is consuming data from <b>AllTrails API</b> and <b>Yelp Fusion API</b>.</li>
+<li>The frontend consumes API endpoints exposed by the backend, which is consuming data from <b>TrailAPI</b> and <b>Yelp Fusion API</b>.</li>
   
   <li>This app creates a <i>custom itinerary</i> with <b>three trails</b> and <b>three restaurants</b> based on geodata.</li>
 
